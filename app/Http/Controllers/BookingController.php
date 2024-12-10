@@ -45,7 +45,7 @@ class BookingController extends Controller
     {
         $validation = $request->validate([
             "bedroom_id"     => "required",
-            "payment_proof"  => "required|image|mimes: jpeg,jpg,png",
+            "payment_proof"  => "required|image|mimes:jpeg,jpg,png",
         ]);
 
         $validation['user_id'] = Auth::user()->id;
