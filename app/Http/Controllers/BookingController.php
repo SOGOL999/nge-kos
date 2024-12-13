@@ -80,7 +80,6 @@ class BookingController extends Controller
 
         $user = $booking->user;
         $bedroom = $booking->bedroom;
-
         $booking->status = $request->input('status');
         $booking->save();
 
